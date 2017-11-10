@@ -1,3 +1,3 @@
 # converterCSVtoLDIF
 This repo converts CSV files into LDIF form
-test1
+currently I have only python script tested in mac os
