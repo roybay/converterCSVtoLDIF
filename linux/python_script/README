@@ -1,0 +1,26 @@
+The script works with: 
+python convertCSVtoLDIF.py -h
+
+convertCSVtoLDIF.py -c <container> -f <file path> -o <output.ldif>
+
+python convertCSVtoLDIF.py \
+-c ou=temp,ou=people,dc=idstore,dc=dev,dc=lab \
+-f hdrtest_temp_users.csv \
+-o temp.ldif
+
+./backup -h OMATI-IDMOUD01.test.lab -p 4444 -D "cn=Directory Manager" \
+-j /opt/oracle/ldap/.pwd.file -X \
+-a -c -A -s -y -I ${BACKUP_ID} \
+-d /opt/oracle/Oracle/Middleware/asinst_1/OUD/bak/
+
+./ldapmodify \
+-h OMADI-OIMOUD01.dev.lab \
+-p 1389 -D "cn=Directory Manager" \
+-j /opt/oracle/ldap/pwd.file \
+-a -f /opt/oracle/ldap/test.ldif
+
+IF YOU SEE ^M T THE END OF THE LINE
+IT MEANS THE FILE COMES FROM WIN OS AND NEED TO BE REMOVED
+:%s/\r/\r/g
+
+

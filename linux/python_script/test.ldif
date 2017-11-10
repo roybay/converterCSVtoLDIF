@@ -1,0 +1,12 @@
+# Description: auto converter for CSV to LDIF
+#
+
+dn: uid=aaaroytest02,ou=testou,dc=idstore,dc=dev,dc=lab
+changetype: modify
+add: ptaSyncId
+ptaSyncId: pta123test
+
+dn: uid=testroy,ou=testou,dc=idstore,dc=dev,dc=lab
+changetype: modify
+add: ptaSyncId
+ptaSyncId: pta124test
