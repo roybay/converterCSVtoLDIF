@@ -1,0 +1,15 @@
+dn: uid=HOANG,ou=contractor,ou=people,dc=idstore,dc=dev,dc=lab
+changetype: modify
+add: mail
+mail: bill@hdrinc.com
+
+dn: uid=RNGUYEN,ou=contractor,ou=people,dc=idstore,dc=dev,dc=lab
+changetype: modify
+add: mail
+mail: Korwich.Nguyen@hdrinc.com
+
+dn: uid=KMICHALS,ou=contractor,ou=people,dc=idstore,dc=dev,dc=lab
+changetype: modify
+add: mail
+mail: Kurt.Michalski@hdrinc.com
+
